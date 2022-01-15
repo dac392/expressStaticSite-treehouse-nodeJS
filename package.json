@@ -1,0 +1,19 @@
+{
+  "name": "expressStaticSite-treehouse-nodeJS",
+  "version": "1.0.0",
+  "description": "Treehouse 'develop a node static site with express' project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "expressStaticSite-treehosue-nodeJS"
+  },
+  "author": "Diego Castellanos",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.2",
+    "pug": "^3.0.2"
+  }
+}
