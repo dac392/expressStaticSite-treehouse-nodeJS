@@ -6,7 +6,7 @@
             "description":"A script that highlights asynchronous programming fundamentals by fetching random user data from an API and manipulates the response to dynamically inserts them into the DOM",
             "technologies":["API", "JavaScripts", "CSS", "HTML","Fetch", "Asynchronous Programming"],
             "live_link":"https://dac392.github.io/fetchAPI-treehouse-js/",
-            "image_urls":["images/project-8-small","images/project-8-medium","images/project-8-large"]
+            "image_urls":["images/project-8-small.png","images/project-8-medium.png","images/project-8-large.png"]
 
         },
         {
@@ -15,7 +15,7 @@
             "description":"A project utilizing JavaScript to enhance an interactive registration form for a fictional Full Stack conference.",
             "technologies":["JavaScripts", "CSS", "HTML","Regular Expressions", "Form Validation"],
             "live_link":"https://dac392.github.io/interactiveForm-treehouse-js/",
-            "image_urls":["images/project-7-small","images/project-7-medium","images/project-7-large"]
+            "image_urls":["images/project-7-small.png","images/project-7-medium.png","images/project-7-large.png"]
         },
         {
             "id":2,
@@ -23,7 +23,7 @@
             "description":"Implemented 'pagination' on user data to enhance a web page's usability, used to futher practice JavaScript basics.",
             "technologies":["JavaScripts", "CSS", "HTML", "Pagination", "Filtering"],
             "live_link":"https://dac392.github.io/paginationAndFiltering-treehouse-js/",
-            "image_urls":["images/project-6-small","images/project-6-medium","images/project-6-large"]
+            "image_urls":["images/project-6-small.png","images/project-6-medium.png","images/project-6-large.png"]
         },
         {
             "id":3,
@@ -31,7 +31,7 @@
             "description":"Developed a browser version of 'Wheel of Success,' a word guessing game where players click letters from an onscreen keyboard to try to guess a random phrase.",
             "technologies":["JavaScripts", "CSS", "HTML","Event Listeners", "DOM Manipulation"],
             "live_link":"https://dac392.github.io/wordGuessingGame-treehouse-js/",
-            "image_urls":["images/project-5-small","images/project-5-medium","images/project-5-large"]
+            "image_urls":["images/project-5-small.png","images/project-5-medium.png","images/project-5-large.png"]
         },
         {
             "id":4,
@@ -39,7 +39,7 @@
             "description":"My first JavaScript project, an app that displays random quotes each time the user clicks a button.",
             "technologies":["JavaScripts", "CSS", "HTML","Event Listeners", "DOM Manipulation"],
             "live_link":"https://dac392.github.io/randomQuoteGenerator-treehouse-js/",
-            "image_urls":["images/project-4-small","images/project-4-medium","images/project-4-large"]
+            "image_urls":["images/project-4-small.png","images/project-4-medium.png","images/project-4-large.png"]
         },
         {
             "id":5,
@@ -47,7 +47,7 @@
             "description":"Implemented a resizable signup form to showcase my understanding of HTML and CSS basics.",
             "technologies":["CSS", "HTML","Forms"],
             "live_link":"https://dac392.github.io/beginnerHtmlForm-treehouse-css/",
-            "image_urls":["images/project-3-small","images/project-3-medium","images/project-3-large"] 
+            "image_urls":["images/project-3-small.png","images/project-3-medium.png","images/project-3-large.png"] 
         },
         {
             "id":6,
@@ -55,15 +55,15 @@
             "description":"A small project using css and flexbox to make a resizable website design",
             "technologies":["CSS", "HTML", "Flexbox", "Media Queries"],
             "live_link":"https://dac392.github.io/mobileFirstDesign-treehouse-css/",
-            "image_urls":["images/project-2-small","images/project-2-medium","images/project-2-large"]   
+            "image_urls":["images/project-2-small.png","images/project-2-medium.png","images/project-2-large.png"]   
         },
         {
-            "id":6,
+            "id":7,
             "project_name":"Profile Page",
-            "description":"This was my first attempt at practicing the fundamentals of web development, using html and css to make a small profile page",
+            "description":"This was my first attempt at practicing the fundamentals of web development, using html and css to make a small.png profile page",
             "technologies":["CSS", "HTML"],
             "live_link":"https://dac392.github.io/profilPage-treehouse-css/",
-            "image_urls":["images/project-1-small","images/project-1-medium","images/project-1-large"]   
+            "image_urls":["images/project-1-small.png","images/project-1-medium.png","images/project-1-large.png"]   
         }
     ]
 }

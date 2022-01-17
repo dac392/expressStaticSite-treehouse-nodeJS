@@ -11,8 +11,8 @@ app.use("/static",express.static("public"));
 
 app.set("view engine", "pug");
 
-const indexRoutes = require("./routes");
-app.use(indexRoutes);
+const pages = require("./routes/pages");
+app.use(pages);
 
 app.use((req, res, next)=>{
     const err = new Error(`sorry, your request could not be fulfilled`);
