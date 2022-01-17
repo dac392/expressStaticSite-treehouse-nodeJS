@@ -15,8 +15,9 @@ const pages = require("./routes/pages");
 app.use(pages);
 
 app.use((req, res, next)=>{
-    const err = new Error(`sorry, your request could not be fulfilled`);
+    const err = new Error(`Oh no! Your request to the path: ${req.url} could not be fulfilled. Something may have been misspelled, or the path may not exist. Please try again or return to the home menue`);
     err.status = 404;
+    err.url = req.url;
     next(err);
 });
 app.use((error, req, res, next)=>{

@@ -1,6 +1,9 @@
 /*
   Main styles
 */
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -34,16 +37,12 @@ h1,
 h2,
 h3,
 h4,
-h5,
 p {
   font-family: "Merriweather", serif;
 }
 
 h5 {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: 2.5px;
-  -webkit-text-transform: uppercase;
-  text-transform: uppercase;
+  font-family: "Pacifico", cursive;
 }
 
 h6 {
@@ -244,11 +243,8 @@ nav a span {
 }
 
 .projects-box h5 {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 13px;
-  letter-spacing: 2.25px;
-  text-transform: uppercase;
+  font-family: "Pacifico", cursive;
+  font-size: 2em;
   color: #222;
   margin: 0 auto 8px;
 }
@@ -260,8 +256,6 @@ nav a span {
 .cell img {
   width: 100%;
   min-width: 100px;
-  border: 4px solid #fff;
-  box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
 }
 
 /* 
@@ -306,6 +300,88 @@ nav a span {
   background-color: #333;
   color: #fefefe;
 }
+/* additional styling */
+.polaroid {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all ease-in-out 0.2s;
+}
+.polaroid:hover {
+  transform: scale(1.1);
+}
+.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+.learn-more {
+  transition: all ease-in-out 0.2s;
+}
+.learn-more:hover {
+  color: white;
+}
+/* ERROR STYLING */
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* background-color: rosybrown; */
+}
+.error-bar {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0 10px;
+  border-bottom: 0.5em solid #333;
+}
+.error-bar p {
+  width: 70%;
+  /* margin: auto; */
+  background-color: white;
+  border: 2px solid #333;
+  padding-left: 10px;
+}
+.error-container ul {
+  display: flex;
+  width: 15%;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+.circle {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: #333;
+  align-self: center;
+}
+.error-card {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 50%;
+  background-color: white;
+  border: 0.5em solid #333;
+  background-color: #ffcecd;
+}
+.error-container img {
+  width: 50px;
+}
+.error-heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.error-body {
+  color: black;
+  text-align: center;
+  padding: 0 15px;
+}
+.error-card a {
+  margin: auto;
+}
 
 /* 
   Tablet layout styles 
@@ -344,6 +420,12 @@ nav a span {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
+  .error-card {
+    width: 50%;
+  }
+  .error-heading {
+    padding: 0 2em;
+  }
 }
 
 /* 
@@ -366,25 +448,7 @@ nav a span {
   .inner-wrapper {
     max-width: 1200px;
   }
-}
-
-/* additional styling */
-.polaroid {
-  width: 100%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: all ease-in-out 0.2s;
-}
-.polaroid:hover {
-  transform: scale(1.1);
-}
-.container {
-  text-align: center;
-  padding: 10px 20px;
-}
-.learn-more {
-  transition: all ease-in-out 0.2s;
-}
-.learn-more:hover {
-  color: white;
+  .error-card {
+    width: 50%;
+  }
 }

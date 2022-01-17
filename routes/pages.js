@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { projects } = require("../data.json");
+const regex = new RegExp(`^[0-${projects.length-1}]$`);
 
 router.get("/", (req,res)=>{
     res.render("index", {projects});
@@ -13,19 +14,18 @@ router.get("/about", (req,res)=>{
 router.get("/:id", (req, res)=>{
     try{
         const { id } = req.params;
-        // console.log( (Number(id)>= projects.length) );
-        // console.log( (!Number(id)) );
-        // if( (!Number(id)) || (Number(id)>= projects.length) ){
-        //     const error = new Error(`sorry, we could not find the path that you were looking for`);
-        //     error.status = 404;
-        //     console.log("yes");
-        //     throw error;
-        // }
+        const match = regex.test(id)
+        if( !match ){
+            const error = new Error(`sorry, we could not find the path that you were looking for, redirecting to the main page.`);
+            error.status = 303;
+            throw error;
+        }
         const project = projects[id];
         res.render("project", { project });
     }catch(error){
+        console.log(error.message);
         res.status(error.status);
-        res.render("error", {error});
+        res.redirect("/");
     }
 
 });
