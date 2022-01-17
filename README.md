@@ -12,3 +12,14 @@ skills applied:
   - Node.js
   - Frameworks
   - Templates
+
+## Styling Additions
+
+1. Links
+   - changed the color, background-color, and border
+   - added an on hover transition
+1. Project Previews
+   - changed the style of the previews to look like poloroid pictures
+   - added a scale growth on hover transition
+1. Learn more -link
+   - added a color change on hover transition
