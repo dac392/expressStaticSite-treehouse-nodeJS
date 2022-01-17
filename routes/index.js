@@ -3,11 +3,11 @@ const router = express.Router();
 const { projects } = require("../data.json");
 
 router.get("/", (req,res)=>{
-    res.render("app");
+    res.render("index", {projects});
 });
 
 router.get("/about", (req,res)=>{
-    res.render("about");
+    res.render("about", {projects});
 });
 
 router.get("/:id", (req, res)=>{
@@ -18,7 +18,7 @@ router.get("/:id", (req, res)=>{
             error.status = 404;
             throw error;
         }
-        res.render("app", {id});
+        res.render("index", {projects});
     }catch(error){
         res.status(error.status);
         res.render("error", {error});

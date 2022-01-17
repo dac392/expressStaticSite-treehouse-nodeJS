@@ -1,8 +1,39 @@
-doctype html
-html(lang="en")
+<!DOCTYPE html>
+html(lang="en" dir="ltr")
   head
-    title Castellanos
-    link(rel='stylesheet', href='/static/stylesheets/style.css')
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Portfolio Site
+    link(href='https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,800', rel='stylesheet')
+    link(rel='stylesheet', href='/static/css/normalize.css')
+    link(rel='stylesheet', href='/static/css/styles.css')
+
   body
-    include includes/header.pug
-    block main
+    #my-info.sidebar
+      .sidebar-info-box
+        br
+        .thumbnail-box
+          img.thumbnail(src='/static/images/profile-pic.jpg', alt='profile picture of Diego Castellanos')
+        .dev-intro-box
+
+          //- Replace with your name
+          h5 Diego Castellanos
+
+          //- Replace with description of who you are, what you do, and why you are so awesome
+          p I am a web developer with 3 years of coding experience.
+
+          //- Add path from your '/about' route handler to the href below
+          a(href='/about') Learn More &rarr;
+
+    .wrapper
+      .header
+        .header-info-box
+          button#menu-icon.menu-icon(type='button' data-toggle='my-info')
+
+          //- Replace with your name — this is for the mobile layout
+          span Diego Castellanos
+
+      block content
+
+  script(src='/static/js/script.js')
