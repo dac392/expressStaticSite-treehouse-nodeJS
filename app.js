@@ -38,7 +38,7 @@ app.use((error, req, res, next)=>{
 
 
 
-app.listen(3000, ()=>console.log("restarting the server"));
+app.listen(3000, ()=>console.log("Restarting the server. Visit localhost:3000 on your browser"));
 
 
 
