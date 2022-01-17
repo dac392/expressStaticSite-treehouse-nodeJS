@@ -1,7 +1,7 @@
 extends layout 
 block content
     .error-container 
-        .error-card#server-error
+        .error-card
             .error-bar 
                 ul 
                     li.circle 
@@ -9,7 +9,7 @@ block content
                     li.circle
                 p= `Path: ${error.url}`
             .error-heading
-                img(src="/static/images/other-error.svg", alt="Error symbol")
+                img(src="/static/images/404.svg", alt="Error symbol")
                 h1= `Status: ${error.status}`
             .error-body
                 p= `${error.message}`
