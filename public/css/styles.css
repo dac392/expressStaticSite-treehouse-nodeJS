@@ -1,4 +1,3 @@
-
 /*
   Main styles
 */
@@ -31,25 +30,30 @@ article {
   background: #fefefe;
 }
 
-h1,h2,h3,h4,h5,p{
-  font-family: 'Merriweather', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: "Merriweather", serif;
 }
 
-h5{
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+h5 {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 2.5px;
   -webkit-text-transform: uppercase;
   text-transform: uppercase;
 }
 
-h6{
+h6 {
   letter-spacing: 2.5px;
   -webkit-text-transform: uppercase;
   text-transform: uppercase;
   font-weight: 600;
 }
 
-p{
+p {
   font-size: 15px;
   color: #666;
 }
@@ -101,7 +105,6 @@ a {
   font-size: 13px;
 }
 
-
 /*
   Sidebar and mobile header
 */
@@ -114,12 +117,12 @@ nav {
 nav a {
   width: 100%;
   vertical-align: middle;
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: #555; 
+  color: #555;
 }
 
 nav a span {
@@ -167,11 +170,11 @@ nav a span {
   text-rendering: optimizeLegibility;
   line-height: 1.6;
   font-size: 14px;
-  color: #999
+  color: #999;
 }
 
 .sidebar a {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-size: 13px;
   letter-spacing: 2.5px;
@@ -209,7 +212,7 @@ nav a span {
 }
 
 .header button:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 40%;
   left: 0;
@@ -217,7 +220,6 @@ nav a span {
   height: 2px;
   background: #fefefe;
 }
-
 
 /*
   Home page styles
@@ -242,12 +244,12 @@ nav a span {
 }
 
 .projects-box h5 {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 13px;
   letter-spacing: 2.25px;
   text-transform: uppercase;
-  color: #222;;
+  color: #222;
   margin: 0 auto 8px;
 }
 
@@ -261,7 +263,6 @@ nav a span {
   border: 4px solid #fff;
   box-shadow: 0 0 0 1px rgba(10, 10, 10, 0.2);
 }
-
 
 /* 
   About and project pages styles 
@@ -291,15 +292,23 @@ nav a span {
 .btn-link {
   display: block;
   text-align: center;
-  color: #fefefe;
+  font-weight: bold;
+  /* color: #fefefe; */
+  color: #333;
   width: 100%;
   max-width: 255px;
   margin: auto 0 5px 0;
   padding: 0.85em 1em;
-  background-color: #333;
-  border: 1px solid transparent;
+  /* background-color: #333;
+  border: 1px solid transparent; */
+  border: 2px solid #333;
+  border-radius: 5px;
+  transition: all ease-in-out 0.25s;
 }
-
+.btn-link:hover {
+  background-color: #333;
+  color: #fefefe;
+}
 
 /* 
   Tablet layout styles 
@@ -340,7 +349,6 @@ nav a span {
   }
 }
 
-
 /* 
   Desktop layout styles 
 */
@@ -361,4 +369,25 @@ nav a span {
   .inner-wrapper {
     max-width: 1200px;
   }
+}
+
+/* additional styling */
+.polaroid {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all ease-in-out 0.2s;
+}
+.polaroid:hover {
+  transform: scale(1.1);
+}
+.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+.learn-more {
+  transition: all ease-in-out 0.2s;
+}
+.learn-more:hover {
+  color: white;
 }
