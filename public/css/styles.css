@@ -3,6 +3,7 @@
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -19,7 +20,8 @@ body {
 
 body {
   position: relative;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  /* font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; */
+  font-family: "Poppins", sans-serif;
   font-weight: normal;
   line-height: 1.5;
   color: #0a0a0a;
@@ -38,7 +40,8 @@ h2,
 h3,
 h4,
 p {
-  font-family: "Merriweather", serif;
+  /* font-family: "Merriweather", serif; */
+  font-family: "Poppins", sans-serif;
 }
 
 h5 {
@@ -116,9 +119,10 @@ nav {
 nav a {
   width: 100%;
   vertical-align: middle;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 1em;
   letter-spacing: 2.5px;
   text-transform: uppercase;
   color: #555;
@@ -173,9 +177,10 @@ nav a span {
 }
 
 .sidebar a {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 1em;
   letter-spacing: 2.5px;
   text-transform: uppercase;
   color: #555;
