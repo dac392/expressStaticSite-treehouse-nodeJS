@@ -1,19 +1,20 @@
+//global constants
 const express = require("express");
 const bodyParser = require("body-parser");
-// const cookieParser = require("cookie-parser");
 const data = require("./data.json");
-const path = require('path');   // I don't know if I will use this or not
 
+//set up express
 const app = express();
 app.use(bodyParser.urlencoded({extended: false}));
-// app.use(cookieParser());
 app.use("/static",express.static("public"));
-
 app.set("view engine", "pug");
 
+//set up routes
 const pages = require("./routes/pages");
 app.use(pages);
 
+
+//error handlers
 app.use((req, res, next)=>{
     const err = new Error(`Oh no! Your request to the path: ${req.url} could not be fulfilled. Something may have been misspelled, or the path may not exist. Please try again or return to the home menue`);
     err.status = 404;
@@ -35,9 +36,7 @@ app.use((error, req, res, next)=>{
 });
 
 
-
-
-
+//listening
 app.listen(3000, ()=>console.log("Restarting the server. Visit localhost:3000 on your browser"));
 
 
