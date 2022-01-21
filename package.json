@@ -1,5 +1,5 @@
 {
-  "name": "expressStaticSite-treehouse-nodeJS",
+  "name": "expressstaticsite-treehouse-nodejs",
   "version": "1.0.0",
   "description": "Treehouse 'develop a node static site with express' project",
   "main": "app.js",
