@@ -2,7 +2,7 @@
 
 > Project 9 of Treehouse Web Development Tech Degree
 
-A website built using node.js, express, and pug, as a way to further develop my web-development skills.
+Implemented an Node static site using express to learn server-side technology. Combined with express, I used Pug templates to render the html for my landing page. The server is used to generate a portfolio site that showcases some of my latest web development projects.
 
 skills applied:
 
