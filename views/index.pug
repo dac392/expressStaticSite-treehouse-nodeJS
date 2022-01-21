@@ -15,7 +15,7 @@ block content
     .projects-box.box.grid
       each project in projects 
         div.cell.polaroid 
-          a(href=`/${project.id}`)
+          a(href=`/projects/${project.id}`)
             img.thumbnail(src=`/static/${project.image_urls[2]}`, alt=`${project.project_name} thumbnail image`)
             .container
               h5= project.project_name

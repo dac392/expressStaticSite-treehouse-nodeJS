@@ -18,7 +18,7 @@ router.get("/error", (req, res, next)=>{
     throw error;
 });
 //project route
-router.get("/:id", (req, res, next)=>{
+router.get("/projects/:id", (req, res, next)=>{
     const { id } = req.params;
     if( projects[id] ){
         const project = projects[id];
