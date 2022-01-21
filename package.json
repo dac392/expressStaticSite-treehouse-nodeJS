@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "expressStaticSite-treehosue-nodeJS"
+    "url": "https://github.com/dac392/expressStaticSite-treehouse-nodeJS.git"
   },
   "author": "Diego Castellanos",
   "license": "MIT",
